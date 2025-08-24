@@ -1,5 +1,8 @@
 
-path: data/skin_det
+# Dataset root path. Using a relative path to this file caused training to look for
+# data/skin_det inside the configs directory, which does not exist. Point one
+# directory up to reference the actual dataset location at data/skin_det.
+path: ../data/skin_det
 train: images/train
 val: images/val
 names:
